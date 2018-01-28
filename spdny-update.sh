@@ -1,6 +1,6 @@
 #!/bin/bash
 # Quelle: http://my5cent.spdns.de/de/comment/64#comment-64
-# spdns.de external ip update script
+# spdns.de | spdyn.de external ip update script
 
 # spdns host vars
 # Hier Host und Token eintragen:
