@@ -4,3 +4,11 @@ a collection of bash scriptes
 ### [spdny-update.sh](spdny-update.sh)  
 Mit diesem Script wird die aktuelle externe IP an den DynDNS Hoster [spdyn.de](https://spdyn.de) übergeben.  
 Einfach *dns_host* und *dns_token* anpassen, und dieses Script über einen cronjob ausführen
+
+### [current_ip.sh](current_ip.sh)
+Wenn mehrere Hosts über eine IP betrieben werden sollen, dafür ist dieses Script behilflich.
+
+* SCRIPT_PATH = Pfad wo sich das spdny_update Script befindet
+
+sudo crontab -e  
+*/5 * * * * /home/USER/current_ip.sh
