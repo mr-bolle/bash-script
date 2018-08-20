@@ -10,12 +10,12 @@ Wenn mehrere Hosts über eine IP betrieben werden sollen, dafür ist dieses Scri
 
 * SCRIPT_PATH = Pfad wo sich das spdny_update Script befindet
 
-sudo crontab -e  
-*/5 * * * * /home/USER/current_ip.sh
+  `sudo crontab -e`  
+  `*/5 * * * * /home/USER/current_ip.sh`  
 
 ### [Debian|Ubuntu Update Neustart notwendig](debian_update_restart-required.sh)
 Wenn ein Update vom zB. Kernel durchgeführt wurde, ist ein Neustart des Rechner/Server in vielen Fällen notwendig.
 Ist der Neustart notwendig, wird eine Datei '' generiert. Und über das og. Script in Verbindung mit dem Cronjob geschieht dies automatisch.
 
-sudo crontab -e  
-* 1 * * * /home/USER/debian_update_restart-required.sh
+  `sudo crontab -e`  
+  `* 1 * * * /home/USER/debian_update_restart-required.sh`
