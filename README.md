@@ -19,3 +19,10 @@ Ist der Neustart notwendig, wird eine Datei '' generiert. Und über das og. Scri
 
   `sudo crontab -e`  
   `* 1 * * * /home/USER/debian_update_restart-required.sh`
+
+### bash_prompt
+Source @necolas https://github.com/necolas/dotfiles
+
+![Screenshot new prompt](http://i.imgur.com/EkEtphC.png)
+
+`curl "https://raw.githubusercontent.com/mr-bolle/bash-script/master/bash_prompt" -o ~/.bash_prompt`
