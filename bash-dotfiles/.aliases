@@ -1,0 +1,16 @@
+## erstelle diese Datei in dem Userverzeichnis `~/.aliases`
+## `source ~/.aliases` aktuelle Befehle laden
+
+
+# docker-compose
+alias dc='docker-compose'
+
+## rsr => kopiert Dateien / Ordner in das Ziel, und löscht die Quelle nach erfolg
+alias rsr='rsync -avPh --stats --remove-source-files'
+
+##  yml => durchsucht den Inhalt aller yml Files im Verzeichnis "/docker_config", nach dem folgenden Begriff
+alias yml='grep -rnwi --include=\*.yml '/docker_config/' -e '
+
+## disc usage 1 oder 2 Ebenen mit Sortierung nach Speicherbelegung
+alias du1='du -h --max-depth 1 ./ | sort -h'
+alias du2='du -h --max-depth 2 ./ | sort -h'
