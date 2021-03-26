@@ -93,7 +93,8 @@ fi;
 
 # Highlight the user name when logged in as root.
 if [[ $(whoami) == "root" ]]; then
-        userStyle="${red} 🔥";
+#        userStyle="${red} 🔥";
+        userStyle="${red}";
 else
 	userStyle="${green}";
 fi;
