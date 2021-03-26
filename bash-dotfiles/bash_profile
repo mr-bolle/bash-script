@@ -8,3 +8,6 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
+
+# create Directory and change to this Directory
+function mkdircd () { mkdir -p "$@" && cd "$@"; }
