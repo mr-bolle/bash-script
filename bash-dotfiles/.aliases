@@ -1,6 +1,8 @@
 ## erstelle diese Datei in dem Userverzeichnis `~/.aliases`
 ## `source ~/.aliases` aktuelle Befehle laden
 
+# ls -latr  'drwxr-xr-x 15 user group    4096 Mär 26 10:48' aufsteigend sortiert
+alias lls='ls -latr'
 
 # docker-compose
 alias dc='docker-compose'
