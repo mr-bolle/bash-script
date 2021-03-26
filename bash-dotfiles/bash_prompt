@@ -96,7 +96,7 @@ if [[ $(whoami) == "root" ]]; then
 #        userStyle="${red} 🔥";
         userStyle="${red}";
 else
-	userStyle="${green}";
+	userStyle="${blue}";
 fi;
 
 # Highlight the hostname when connected via SSH.
