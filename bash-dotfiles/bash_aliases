@@ -2,16 +2,16 @@
 ## `source ~/.aliases` aktuelle Befehle laden
 
 # ls -latr  'drwxr-xr-x 15 user group    4096 Mär 26 10:48' aufsteigend sortiert
-alias lls='ls -latr'
+alias lls='ls -latrh'
 
-# docker-compose
-alias dc='docker-compose'
+# docker-compose (v1) oder docker compose (v2)
+alias dc='docker compose'
 
 ## rsr => kopiert Dateien / Ordner in das Ziel, und löscht die Quelle nach erfolg
 alias rsr='rsync -avPh --stats --remove-source-files'
 
-##  yml => durchsucht den Inhalt aller yml Files im Verzeichnis "/docker_config", nach dem folgenden Begriff
-alias yml='grep -rnwi --include=\*.yml '/docker_config/' -e '
+##  yml => durchsucht den Inhalt aller yml Files im Verzeichnis "/opt/docker", nach dem folgenden Begriff
+alias yml='grep -rnwi --include=\*.yml '/opt/docker/' -e '
 
 ## disc usage 1 oder 2 Ebenen mit Sortierung nach Speicherbelegung
 alias du1='du -h --max-depth 1 ./ | sort -h'
